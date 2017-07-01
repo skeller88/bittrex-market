@@ -1,6 +1,6 @@
 {
   "name": "bittrex-market",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Subscribe to the orderbook and market events on the Bittrex exchange",
   "main": "index.js",
   "scripts": {
