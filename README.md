@@ -14,7 +14,9 @@ $ npm install --save bittrex-market
 # Example
 ```js
 const MarketManager = require('bittrex-market')
-const marketManager = new MarketManager()
+
+//set to true if you want to replay historic trades
+const marketManager = new MarketManager(false)
 
 //establish the connection to bittrex
 marketManager.connect()
