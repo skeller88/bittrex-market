@@ -18,14 +18,8 @@ const MarketManager = require('bittrex-market')
 //set to true if you want to replay historic trades
 const marketManager = new MarketManager(false)
 
-//establish the connection to bittrex
-marketManager.connect()
-
-//only proceed after the connection has been established
-marketManager.on('connected', () => {
-    //access the desired market
-    const ethereum = marketManager.market('BTC-ETH')
-
+//access the desired market
+marketManager.market('BTC-ETH', (err, ethereum) => {
     //print the fulfilled orders to stdout in real time
     //in case the connection drops and there is a reconnect
     //all fills from the past get replayed
@@ -42,5 +36,4 @@ marketManager.on('connected', () => {
         console.log(ethereum.bids)
     })
 })
-
 ```
