@@ -9,6 +9,7 @@
   "author": "Matthias Gliwka <mg@cerebuild.com>",
   "license": "MIT",
   "dependencies": {
+    "cloudscraper": "^1.4.1",
     "emitter-queue": "^1.0.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
